@@ -1,0 +1,76 @@
+---
+title: "stat 133"
+author: "Jay z"
+date: "1/31/2019"
+output: html_document
+---
+
+# Star Wars
+
+![](https://vignette.wikia.nocookie.net/starwars/images/a/a3/Kazuda.jpg/revision/latest?cb=20180830051228){height=50%,width=50%}\
+A famous quote by Kazuda Xiono:
+
+> "There's too many pirates.They'll never hold them off. Come on,BB-8! I think I have an idea"
+ 
+Description | Value
+------------|-------
+Species     | Human
+Gender      | Male
+Eye color   | Brown
+Skin color  | Light
+
+# Cooking Recipe
+## How to make delicious chicken wings
+
+* Baked buffalo wings ingredients
+  
+    - 2 pounds chicken whings
+    - 2 teaspoons baking powder
+    - 2 teaspoons kkosher salt
+    - 2 teaspoons hot sauce
+    - 1 tablespoon unsalted butter
+    
+* _List of kitchen tools_
+
+    - baking sheet
+    - cooling rack
+    - teaspoons and tablespoons
+    - pan
+    - oven
+    
+* __steps to make chicken wings__
+
+    1. dry wings with a paper towel
+    2. marinate wings with baking power and salt
+    3. place in the refrigerator for at least 8 hours
+    4. put into oven at 450 degrees for 20min
+    5. put the hot sauce on top of the wings
+    
+# Final outcome
+![](https://www.jessicagavin.com/wp-content/uploads/2018/01/crispy-baked-buffalo-wings-7-1200.jpg){width=50%}
+
+# Euclidean Distance
+
+### Definition
+
+---------------------------------
+The **Euclidean Distance** bewteen points **p** and **q** is the length of the [line segment](https://en.wikipedia.org/wiki/Line_segment) connecting the them (**pq**).
+
+In Cartesian coordinates, if **p** = (p1, p2,..., pn) and **q** = (q1, q2,..., qn) are two points in Euclidean n-space, then\
+the distance (d) from **p** to **q**, or from **q** to **p** is given by the Pythagorean formula:
+
+\[
+d(\mathbf{p,q})=d(\mathbf{q,p})=\sqrt{(q_1-p_2)^2+(q_1-p_2)^2+\dots+(q_n-p_n)^2}\\=
+\sqrt{\sum_{i=1}^{n} (q_i-p_i)^2}
+\]
+
+The position of a point in a Euclidean n-space is a Euclidean vector. So, **p** and **q** may be represented as\
+Euclidean vectors, starting from the origin of the space (initial point) with their tips (terminal points) ending at\
+the two points. The [**Euclidean norm**](https://en.wikipedia.org/wiki/Norm_(mathematics)#Euclidean_norm), or **Euclidean length**, or **magnitude** of a vector measures the length of\
+the vector:
+
+\[
+\|\mathbf{p}\|=\sqrt{p_1^2+p_2^2+\dots+p_n^2}=\sqrt{\mathbf{p\cdot p}},
+\]
+
+where the last expression involves the dot product.
