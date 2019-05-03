@@ -1,0 +1,92 @@
+---
+title: "Getting started with binomial package"
+author: "Jay Zhang"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting started with binomial package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(binomial)
+```
+
+## binomial package
+
+The package `"binomial"` contains tools to help you calculate some important paramaters such mean, variance, mode in binomial distribution, It also provides tools to help you visualize the binomial processes.
+
+## function of  important measures in binomial
+
+The functions to compute mean, variance, mode, skewness and kurtosis.
+```{r}
+bin_mean(10, 0.3)
+bin_variance(10, 0.3)
+bin_mode(10, 0.3)
+bin_skewness(10, 0.3)
+bin_kurtosis(10, 0.3)
+```
+
+## function to compute possible combination 
+
+The first input should be trials and the second input is successes.
+```{r}
+bin_choose(5,2)
+```
+
+## function to compute the probability
+
+The first input should be the number of successes, the second input is trials and the third input should be the probability.
+```{r}
+bin_probability(success = 2, trials = 5, prob = 0.5)
+```
+
+## binomial distribution and visualization
+
+The `bin_distribution` function will create a table of binomial distribution for all the possible number of successes.
+```{r}
+bin_distribution(trials = 5, prob = 0.5)
+```
+
+After you created the object/table, you can use `plot` to visualize the binomial distribution. It will display a hisgram with successes on x-axis and probability on y-axis.
+```{r}
+dis1 <- bin_distribution(trials = 5, prob = 0.5) 
+plot(dis1)
+```
+
+## binomial cumulative distribution
+
+The `bin_cumulative` function will create a table of binomial cumulative distribution. The table is similar to the table of binomial distribution but with an additional column for cumulative probability.
+```{r}
+bin_cumulative(trials = 5, prob = 0.5)
+```
+
+After you create the data frame/table, you can use `plot` to visualize the binomial cumulative distribution in a scatterplot.
+```{r}
+dis2 <- bin_cumulative(trials = 5, prob = 0.5) 
+plot(dis2)
+```
+
+## binomial variable 
+
+The `bin_variable` will display the binomial variables of trials and successes.
+```{r}
+bin1 <- bin_variable(trials = 10, p = 0.3) 
+bin1
+```
+
+You also can use `summary` to get additional parameters.
+```{r}
+bin1 <- bin_variable(trials = 10, p = 0.3) 
+binsum1 <- summary(bin1)
+binsum1
+```
+
